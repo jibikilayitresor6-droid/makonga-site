@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makonga Furera Chris</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2933, #111827);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1f2933;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #1f2933;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    /* ===== ALBUM PHOTO ===== */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .photo {
+      height: 250px;
+      border-radius: 12px;
+      overflow: hidden;              /* empêche tout débordement */
+      background: #e5e7eb;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;             /* image bien cadrée */
+      display: block;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Makonga Furera Chris</h1>
+    <p>Étudiant en ingénierie industrielle, passionné par l’électricité et les télécommunications.</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#biographie">Biographie</a>
+    <a href="#photos">Album photo</a>
+  </nav>
+
+  <section id="accueil">
+    <h2>Accueil</h2>
+    <div class="box">
+      <p>
+        Bienvenue sur mon site personnel. Cet espace présente mon parcours,
+        mes ambitions et ma vision tournée vers l’avenir, tout en restant fidèle
+        aux valeurs de travail, de discipline et de savoir.
+      </p>
+    </div>
+  </section>
+
+  <section id="biographie">
+    <h2>Biographie</h2>
+    <div class="box">
+      <p>
+        Je m'appelle Makonga Furera Chris, fils de Ngoie Rose et Makonga Charles.
+        Je suis né le 21 décembre 2008 à Kipushi, à l’hôpital Gécamine.
+      </p>
+      <p>
+        Après mes études primaires à l’école Tupendene, j’ai poursuivi ma formation
+        à l’Institut technique Mapendo où je me suis spécialisé en électricité.
+        J’ai obtenu mon diplôme d’État en 2024–2025 avec 67 % à l’examen d’État.
+      </p>
+      <p>
+        Actuellement, je poursuis mes études à l’Université de Lubumbashi,
+        Faculté ESI, en classe préparatoire, avec l’ambition de devenir ingénieur
+        en électricité industrielle, option télécommunications.
+      </p>
+    </div>
+  </section>
+
+  <section id="photos">
+    <h2>Album photo</h2>
+    <div class="gallery">
+      <div class="photo">
+        <img src="Gmail/1006555745.jpg" alt="Photo bébé">
+      </div>
+      <div class="photo">
+        <img src="Gmail/1006555746.jpg" alt="Élève à l’école primaire">
+      </div>
+      <div class="photo">
+        <img src="Gmail/1006555748.jpg" alt="Élève en sixième des humanités">
+      </div>
+      <div class="photo">
+        <img src="Gmail/1006555747.jpg" alt="Photo de stage">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Makonga Furera Chris – Tous droits réservés |
+    Email : makongachris425@gmail.com |
+    WhatsApp : +243 973899766
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
